@@ -1,0 +1,660 @@
+@font-face {
+    font-family: quicksandLight;
+    src: url(fonts/Quicksand-Light.otf);
+}
+@font-face {
+    font-family: quicksandReg;
+    src: url(fonts/Quicksand-Regular.otf)
+}
+
+/*Generic classes------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+body {
+    background-color: black;
+    color:rgb(255, 237, 237);
+    color:#e6e6e6;
+    
+}
+.home-parallax {
+   background: url(image/background_img/ParallaxStars.png) 50% -50px repeat fixed;
+   background-size: auto 60%;
+   background-color: rgba(0, 0, 0, 0.2);
+   
+}
+.home-parallax-1 {
+   background: url(image/background_img/ParallaxStars.png) 40% 0px repeat fixed;
+   background-size: auto 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  
+}
+.home-parallax-2 {
+   background: url(image/background_img/ParallaxStars.png) 70% 0px repeat fixed;
+   background-size: auto 55%; 
+}
+body, h1, h2, h3, h4, h5, h6, p, div, span, a {
+    font-family: quicksandReg, tahome;
+    margin:0px;
+}
+p {
+    margin: 10px 0px 10px 0px;
+}
+.aqua {
+ background-color: rgba(5, 129, 140, .5); 
+}
+.red {
+  background-color:rgba(205, 66, 4, 0.5);
+}
+.blue {
+  background-color:rgba(25, 72, 160, 0.5);
+}
+.white-background {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.black-background
+{
+    background-color:rgb(15, 15, 15);
+}
+.black-transparent {
+  background-color:rgba(15, 15, 15, 0.6);
+}
+.navy-background {
+    background-image: url(image/background_img/navy_blue.png);
+    background-attachment: fixed;
+}
+.furley-background {
+   background-image: url(image/background_img/furley_bg_@2X.png);
+    color:black; 
+}
+.blue-transparent-background {
+   /* background-color: rgba(103, 208, 255, 0.28)*/
+      background-color: rgba(38, 60, 86, 0.7)
+}
+.row {
+margin: 0px;
+border: 0px;
+}
+
+.row-header {
+  margin: 20px;
+  font-size: 3em;
+}
+.row-padding
+{
+    padding:40px 0 40px 0;
+}
+.bottom-margin
+{
+    margin: 0 0 25px 0;
+}
+.margin {
+    margin:10px; 
+}
+.padding {
+padding: 3px;
+}
+
+.white-box {
+  Background-color: #e8e8e8;
+  color: black;
+  padding: 15px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.67) inset;
+}
+.social-icon
+{
+    color: rgb(229, 229, 229);
+    margin: 10px;
+    transition:.25s;
+}
+a {
+    transition: .2s;
+}
+a:hover {
+    text-decoration: none;
+    color:#414141;
+}
+
+/* Button Styles */
+
+.btn-default{
+    background-color: rgba(103, 208, 255, 0.28);
+    color:#e8e8e8;
+    width: 180px;
+    height:40px;
+    transition: .5s;
+    
+}
+.btn-default:hover {
+    background-color: rgba(103, 208, 255, 0.28);
+    border-color: black;
+    color:black;
+}
+.btn-default:active, .btn-default:focus {
+    background-color: rgba(103, 208, 255, 0.28);
+    border-color: white;
+    color:white;
+    outline: none;
+}
+.btn-negative {
+background-color: rgba(103, 208, 255, 0.28);
+  border-color: black;
+  color:black;
+}
+.btn-negative:hover
+{
+ border-color:rgba(255, 255, 255, 0);
+letter-spacing: 1px;
+}
+.white-border{
+border: 1px solid white;
+}
+.white-dot-border {
+  border: 1px dotted white;
+}
+.top-bottom {
+  border-right: 0px;
+  border-left: 0px
+}
+.black-border{
+border: 1px solid black;
+}
+
+.contact-button {
+    margin-top: 20px;
+}
+
+/* Styles a div to add triangular break to rows*/
+.row-break-right {
+height: 50px;
+width: 50px;
+position:absolute;
+margin-top: -65px;
+right:25%;
+transform: rotate(45deg);    
+}
+.row-break-left {
+height: 50px;
+width: 50px;
+position:absolute;
+margin-top: -65px;
+left:25%;
+transform: rotate(45deg);
+  overflow: hidden;
+}
+.break-bottom {
+border-bottom: none;
+border-right: none;  
+}
+.break-top{
+border-top: none;
+border-left:none;   
+}
+
+.blocker-bottom-left {
+    position: absolute;
+    height: 40px;
+    width: 180px;
+    z-index: 100;
+    background-attachment: fixed;
+}
+.blocker-inner {
+    height:100%;
+    width: 100%;
+}
+
+
+
+/*header section styles------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.navbar {
+    height: 700px;
+    border: 0px;
+    margin: 0px;
+}
+
+.jumbotron {
+margin:10% 15% 2% 15%;
+padding: 2%;
+background-color: rgba(0, 0, 0, 0.3);
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.35);
+box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
+border-radius: 1px;
+border: 1px dotted white;
+}
+.head-icons{
+  margin:3% 15% 2% 15%;
+}
+
+.head-icons br {
+  padding: 0px;
+  margin: 0px;
+}
+
+.data-transfer-sm, .data-transfer-lg {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  line-height: 90%;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+.data-transfer-sm {
+  width: 30px;
+  margin: 0 10px 15px 10px;
+}
+
+.data-transfer-lg {
+  width: 100px;
+  margin: 0 5px 15px 5px;
+}
+
+.transfer-anim {
+  margin-left:400px;
+  animation: transferAnim 3s infinite linear;
+}
+.transfer-anim-2 {
+  margin-left:-400px;
+  animation: transferAnim2 3s infinite linear;
+}
+
+@keyframes transferAnim {
+  0%{margin-left:1000px}
+  {margin-left: 0px}
+  100%{margin-left: -1000px}
+}
+
+@keyframes transferAnim2 {
+  0%{margin-left:-1000px}
+  50%{margin-left: 0px}
+  100%{margin-left: 1000px}
+}
+
+.delay-1 {
+  animation-delay: 2.5s;
+}
+.delay-2 {
+  animation-delay: 2.25s;
+}
+.delay-3 {
+  animation-delay: 2s;
+}
+.delay-4 {
+  animation-delay: 1.75s;
+}
+.delay-5 {
+  animation-delay: 1.5s;
+}
+.delay-6 {
+  animation-delay: 1.25s;
+}
+.delay-7 {
+  animation-delay: 1s;
+}
+.delay-8 {
+  animation-delay: .5s;
+}
+.delay-9 {
+  animation-delay: .25s;
+}
+.delay-10 {
+  animation-delay: 0;
+}
+
+.navbar-toggle
+{
+    border-color: rgba(255, 255, 255, 0.77);
+}
+.navbar-toggle span {
+    border-color:rgba(255, 255, 255, 0.77);
+    color:rgba(255, 255, 255, 0.77);
+    background-color: rgba(255, 255, 255, 0.77);
+}
+.navbar-img
+{
+  float:right;
+}
+.navbar-scroll {
+  right: 100px;
+  position: fixed;
+  animation-name:;
+  animation: 2s forwards;
+  transform-origin: top right;
+}
+.navbar-scroll i {
+  animation: 2s forwards;
+  z-index: 1000;
+}
+
+@keyframes iconscroll {
+  0%{
+    right: 100px;
+    transform: rotate(0deg)
+  }
+  100%{
+    right: 60px;
+    transform: rotate(-90deg)
+  }
+}
+
+@keyframes iconscrollimg {
+  0%{
+    transform: rotate(0deg)
+  }
+  100%{
+    transform: rotate(90deg)
+  }
+}
+
+.navbar-img i
+{
+    color:rgba(255, 255, 255, 0.77);
+}
+.navbar-img i:hover
+{
+    color:rgba(25, 118, 160, 0.58);
+}
+.navbar-img li
+{
+display:inline;
+}
+
+.dropdown-style
+{
+    background-color:rgb(0, 0, 0);
+}
+.img-container {
+    height:70px;
+    width: 76%;
+    margin: 0 12% 0 12%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.bottom-chevron {
+  position: absolute;
+  left: 47%;
+  bottom: 0px;
+  animation: chevron-jump 6s  infinite;
+}
+
+@keyframes chevron-jump {
+  0%{bottom: 0px}
+  5%{bottom: 10px}
+  10%{bottom: 0px}
+  15%{bottom:10px}
+  20%{bottom: 0px;}
+}
+
+
+/* Row 2 Languages------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.row-2 {
+min-height: 37px;
+border-top: 1px dotted white;
+padding-bottom: 50px;
+}
+
+#progress-section {
+  background-color: black;
+  padding: 15px;
+  border-radius: 3px;
+  margin-top: 30px;
+}
+
+.progress {
+background-color: rgba(0, 0, 0, 1);
+border: 1px solid #4a4a4a;
+margin: 5px 0 5px 0;
+}
+.special-progress {
+    margin-top: 20px;
+}
+.progress-label {
+    float:left;
+    width:120px;
+    font-size: 1.1em;
+}
+hr {
+    border-color: #4a4a4a;
+}
+
+
+
+
+/*ending row----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Row 3 PROJECTS------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.projects-area {
+    margin-bottom: 50px;
+    color: black;
+}
+.nav-pills a {
+  background-color: rgba(255, 103, 103, 0.28);
+  color:white;
+  border: 1px dotted black;
+  font-size: 1.2em;
+  margin: 2px;
+}
+.nav-pills [data-toggle]:hover {
+  background-color: rgba(255, 103, 103, 0.5);
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: rgba(255, 103, 103, 0.5);
+}
+
+.content-hr {
+    margin: 5px 0 5px 0;
+}
+
+.description, .features {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.tech-stack {
+    margin-top: 40px;
+}
+
+.description a {
+    font-size: 2.5em;
+}
+.description button {
+  width:auto;
+  height: auto;
+}
+.noLrPadding {
+  padding-left:0px;
+  padding-right:0px;
+}
+
+/* Row 4------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.pic-box{
+  padding-right: 30px;
+}
+.profile-pic
+{
+max-height:250px;
+}
+
+.footer {
+  background-color: rgba(255, 255, 255, 0.19);
+  margin: 10px 0 10px 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
+
+
+
+/* ------------------Contact Modal-----------------------------------------*/
+.contact-modal-overlay {
+    position:fixed;
+    top:0px;
+    right:0px;
+    height:100%;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.9);
+    z-index:200;
+}
+.contact-modal {
+    color: black;
+    background-color:rgba(103, 208, 255, 0.6);
+    border-radius: 3px;
+    animation: open_modal_animation .5s ease-out forwards;
+}
+
+.close-btn {
+    position:absolute;
+    height: 30px;
+    width:30px;
+    padding:0px;
+    right: 10px;
+    top: 10px;
+}
+.contact-modal .form-group
+{
+    margin-top: 27px
+}
+.contact-modal input, .contact-modal textarea
+{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+#contact-modal-whole {
+    display:none;
+}
+#success-submit {
+box-shadow: -1px 1px 3px black; 
+padding: 5px;
+font-weight:800;
+border-radius: 5px;
+animation: success 2s forwards;
+position:absolute;
+right: 30px;
+color:white;
+}
+
+@keyframes success {
+    0% {background-color: #037603;}
+    70% {
+        background-color: #00d300;
+        font-weight:700;
+    }
+    80%{right:50px;}
+    100% {
+        right: -1000px;
+        background-color: #00d300;
+    }
+    
+}
+
+@keyframes open_modal_animation {
+    0%{top: 150%}
+    80%{top: 0%}
+    100%{top:20%}
+}
+
+
+
+
+
+
+
+
+/* media screen edits */
+@media screen and (max-width: 1150px) {
+  .data-transfer-lg {
+    width: 70px;
+     margin: 0 2px 0 2px;
+  }
+  .data-transfer-sm {
+    width: 10px;
+     margin: 0 2px 0 2px;
+  }
+  .head-icons i{
+    font-size:50px;
+  }
+  
+}
+
+@media screen and (max-width: 770px) {
+  
+.navbar-scroll {
+  right: inherit;
+  position: relative;
+  animation: none;
+  transform-origin: top right;
+}
+.navbar-scroll i {
+  animation: none;
+  z-index: 1000;
+}
+  
+  .navbar-collapse {
+    position: fixed;
+    top: 50px;
+    border-radius: 3px;
+    border: 1px dotted white;
+    background-color: black;
+    z-index: 10000;
+  }
+  .navbar-toggle {
+    float:right;
+    right: 7%;
+  }
+  .navbar-header {
+    position: fixed;
+    width: 120%;
+    left: -10%;
+    margin-left: none;
+    background-color: rgba(0, 0, 0, 0.64);
+    border-bottom: 1px dotted white;
+    z-index: 9999;
+  }
+  .navbar-brand {
+    margin-left: 10%
+  }
+  .jumbotron {
+    margin-top: 40%;
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+  .jumbotron h3 {
+    font-size: 1.2em;
+  }
+  .row-2 h1 {
+    margin-bottom: 20px;
+  }
+  .navbar {
+    height: 600px;
+  }
+  .bottom-chevron {
+    left: 40%;
+  }
+  .description a {
+    font-size: 2em;
+  }
+  
+  .data-transfer-lg {
+    width: 30px;
+    margin: 0;
+  }
+  .data-transfer-sm {
+    width: 5px;
+     margin: 0;
+  }
+  .head-icons i{
+    font-size:40px;
+  }
+  @keyframes open_modal_animation {
+    0%{top: 150%}
+    80%{top: -10%}
+    100%{top:2%}
+}
+}
