@@ -97,11 +97,15 @@ border: 0px;
 .padding {
 padding: 3px;
 }
+.paddingLR15px {
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+}
 
 .white-box {
   Background-color: #e8e8e8;
   color: black;
-  padding: 15px;
+  padding: 15px 0 15px 0;
   border-radius: 3px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.67) inset;
 }
@@ -117,6 +121,11 @@ a {
 a:hover {
     text-decoration: none;
     color:#414141;
+}
+
+video {
+  margin: 10px 0 20px 0;
+  border-radius: 3px;
 }
 
 /* Button Styles */
@@ -156,9 +165,14 @@ border: 1px solid white;
 .white-dot-border {
   border: 1px dotted white;
 }
-.top-bottom {
+.top-bottom-border {
   border-right: 0px;
   border-left: 0px
+}
+.bottom-border {
+  border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
 }
 .black-border{
 border: 1px solid black;
@@ -220,14 +234,14 @@ border-left:none;
 .jumbotron {
 margin:10% 15% 2% 15%;
 padding: 2%;
-background-color: rgba(0, 0, 0, 0.3);
+background-color: rgba(0, 0, 0, 0.5);
 text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.35);
 box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
 border-radius: 1px;
 border: 1px dotted white;
 }
 .head-icons{
-  margin:3% 15% 2% 15%;
+  margin:6% 0% 2% 0%;
 }
 
 .head-icons br {
@@ -323,11 +337,11 @@ border: 1px dotted white;
   right: 100px;
   position: fixed;
   animation-name:;
-  animation: 2s forwards;
+  animation: 1s forwards;
   transform-origin: top right;
 }
 .navbar-scroll i {
-  animation: 2s forwards;
+  animation: 1s forwards;
   z-index: 1000;
 }
 
@@ -397,7 +411,6 @@ display:inline;
 
 .row-2 {
 min-height: 37px;
-border-top: 1px dotted white;
 padding-bottom: 50px;
 }
 
@@ -424,7 +437,9 @@ margin: 5px 0 5px 0;
 hr {
     border-color: #4a4a4a;
 }
-
+.project-link {
+    margin-top: 15%;
+}
 
 
 
@@ -491,83 +506,6 @@ max-height:250px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
-
-
-
-
-
-/* ------------------Contact Modal-----------------------------------------*/
-.contact-modal-overlay {
-    position:fixed;
-    top:0px;
-    right:0px;
-    height:100%;
-    width: 100%;
-    background-color:rgba(0, 0, 0, 0.9);
-    z-index:200;
-}
-.contact-modal {
-    color: black;
-    background-color:rgba(103, 208, 255, 0.6);
-    border-radius: 3px;
-    animation: open_modal_animation .5s ease-out forwards;
-}
-
-.close-btn {
-    position:absolute;
-    height: 30px;
-    width:30px;
-    padding:0px;
-    right: 10px;
-    top: 10px;
-}
-.contact-modal .form-group
-{
-    margin-top: 27px
-}
-.contact-modal input, .contact-modal textarea
-{
-    background-color: rgba(255, 255, 255, 0.9);
-}
-#contact-modal-whole {
-    display:none;
-}
-#success-submit {
-box-shadow: -1px 1px 3px black; 
-padding: 5px;
-font-weight:800;
-border-radius: 5px;
-animation: success 2s forwards;
-position:absolute;
-right: 30px;
-color:white;
-}
-
-@keyframes success {
-    0% {background-color: #037603;}
-    70% {
-        background-color: #00d300;
-        font-weight:700;
-    }
-    80%{right:50px;}
-    100% {
-        right: -1000px;
-        background-color: #00d300;
-    }
-    
-}
-
-@keyframes open_modal_animation {
-    0%{top: 150%}
-    80%{top: 0%}
-    100%{top:20%}
-}
-
-
-
-
-
-
 
 
 /* media screen edits */
