@@ -1,18 +1,3 @@
-
-//contact modal
-
-function modalToggleOpen()
-{
-document.getElementById("contact-modal-whole").style.display = "initial";
-document.getElementsById("contact-modal").className = "contact-modal col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12";
-}
-function modalToggleClose()
-{
-document.getElementById("contact-modal-whole").style.display = "none"; 
-document.getElementsById("contact-modal").className = "col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12";
-}
-
-
 //OPENING DIV ANIMATIONS
 
 $(".progress-bar").hide();
@@ -44,14 +29,30 @@ function scrollHandler (){
   
     //SECTION OPENING TRIGGERS
     if( y > 500){
-     $(".progress-bar").animate({ "width" : "show"});
-      $("#progress-section").slideDown(800);
+      $(".projects-area").slideDown(800);
+      setTimeout(function(){
+        $("#doneVideo").get(0).play();
+      }, 900);
     }
     if( y > 1300){
-        $(".projects-area").slideDown(1000);
+        $(".progress-bar").animate({ "width" : "show"});
+      $("#progress-section").slideDown(800);
     }  
 }
 
+$('#doneProject').click(function(){
+  videoPlayer($('#doneVideo'))
+});
+$('#blurtProject').click(function(){
+  videoPlayer($('#blurtVideo'))
+});
+
+
+function videoPlayer(video){
+  $('video').get(0).pause();
+  video.get(0).currentTime = 0;
+  video.get(0).play();
+}
 
 
 $(window).on("scroll", function(){
