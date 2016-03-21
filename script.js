@@ -31,8 +31,11 @@ function scrollHandler (){
     if( y > 500){
       $(".projects-area").slideDown(800);
       setTimeout(function(){
-        $("#doneVideo").get(0).play();
+          if ($(window).width()>480){
+          $("#doneVideo").get(0).play();
+        }
       }, 900);
+      
     }
     if( y > 1300){
         $(".progress-bar").animate({ "width" : "show"});

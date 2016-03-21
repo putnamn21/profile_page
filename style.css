@@ -17,19 +17,19 @@ body {
 }
 .home-parallax {
    background: url(image/background_img/ParallaxStars.png) 50% -50px repeat fixed;
-   background-size: auto 60%;
+   background-size: auto 50%;
    background-color: rgba(0, 0, 0, 0.2);
    
 }
 .home-parallax-1 {
    background: url(image/background_img/ParallaxStars.png) 40% 0px repeat fixed;
-   background-size: auto 50%;
+   background-size: auto 40%;
   background-color: rgba(0, 0, 0, 0.2);
   
 }
 .home-parallax-2 {
    background: url(image/background_img/ParallaxStars.png) 70% 0px repeat fixed;
-   background-size: auto 55%; 
+   background-size: auto 45%; 
 }
 .home-filter {
   width: 100%;
@@ -568,6 +568,23 @@ max-height:250px;
 }
 
 @media screen and (max-width: 480px) {
+.home-parallax {
+  background: url(image/background_img/ParallaxStars.png) 50% -50px repeat fixed;
+  background-size: auto 10%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.home-parallax-1 {
+  background: url(image/background_img/ParallaxStars.png) 40% 0px repeat fixed;
+  background-size: auto 8%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.home-parallax-2 {
+  background: url(image/background_img/ParallaxStars.png) 70% 0px repeat fixed;
+  background-size: auto 9%;
+}
+  
   .jumbotron h3 {
     font-size: 1.2em;
   }
