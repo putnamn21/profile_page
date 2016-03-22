@@ -509,7 +509,7 @@ max-height:250px;
 
 
 /* media screen edits */
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1175px) {
   .data-transfer-lg {
     width: 70px;
      margin: 0 2px 0 2px;
@@ -564,6 +564,17 @@ max-height:250px;
   .jumbotron {
     margin-top: 40%;
   }
+   .data-transfer-lg {
+    width: 30px;
+    margin: 0;
+  }
+  .data-transfer-sm {
+    width: 5px;
+     margin: 0;
+  }
+  .head-icons i{
+    font-size:40px;
+  }
   
 }
 
@@ -584,7 +595,6 @@ max-height:250px;
   background: url(image/background_img/ParallaxStars.png) 70% 0px repeat fixed;
   background-size: auto 9%;
 }
-  
   .jumbotron h3 {
     font-size: 1.2em;
   }
@@ -598,11 +608,11 @@ max-height:250px;
     left: 40%;
   }
   .description a {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   
   .data-transfer-lg {
-    width: 30px;
+    width: 20px;
     margin: 0;
   }
   .data-transfer-sm {
@@ -610,11 +620,14 @@ max-height:250px;
      margin: 0;
   }
   .head-icons i{
-    font-size:40px;
+    font-size:30px;
   }
   @keyframes open_modal_animation {
     0%{top: 150%}
     80%{top: -10%}
     100%{top:2%}
 }
+  .hidden-phone {
+    display: none;
+  }
 }
