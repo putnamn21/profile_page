@@ -486,6 +486,12 @@ hr {
   width:auto;
   height: auto;
 }
+.description small {
+  font-size: 9px;
+  width: 70%;
+  display:block;
+  margin-top: 2px;
+}
 .noLrPadding {
   padding-left:0px;
   padding-right:0px;
