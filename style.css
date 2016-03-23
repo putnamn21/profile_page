@@ -16,20 +16,14 @@ body {
     
 }
 .home-parallax {
-   background: url(image/background_img/ParallaxStars.png) 50% -50px repeat fixed;
-   background-size: auto 50%;
-   background-color: rgba(0, 0, 0, 0.2);
-   
-}
-.home-parallax-1 {
-   background: url(image/background_img/ParallaxStars.png) 40% 0px repeat fixed;
-   background-size: auto 40%;
-  background-color: rgba(0, 0, 0, 0.2);
-  
+   background: url(image/background_img/ParallaxStars.png) 50% -50px repeat;
+   background-size: auto 30%;
+   background-color: rgba(0, 0, 0, 0.2); 
+   background-attachment:fixed;
 }
 .home-parallax-2 {
    background: url(image/background_img/ParallaxStars.png) 70% 0px repeat fixed;
-   background-size: auto 45%; 
+   background-size: auto 45%;
 }
 .home-filter {
   width: 100%;
