@@ -476,7 +476,7 @@ hr {
 .description a {
     font-size: 2.5em;
 }
-.description button {
+.description-link {
   width:auto;
   height: auto;
 }
