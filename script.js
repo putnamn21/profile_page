@@ -8,14 +8,21 @@ var y;
 
 function scrollHandler (){
   
-var parallaxPos = (y / 5);
+    var parallaxPos = -y/4;
     //PARALLAX AREA
   
-    var coordinates = '40% '+ parallaxPos + 'px';
-    $(".home-parallax").css({backgroundPosition: coordinates});
   
-  //social icons animation
+     
+      var coordinates = parallaxPos/4+'px, '+parallaxPos+"px";
+      $(".home-parallax").css({
+          "transform": "translate("+coordinates+")",
+          "-ms-transform": "translate("+coordinates+")",
+          "-webkit-transform": "translate("+coordinates+")"
+      });
+
   
+    
+    //social icons animation
     if(y > 5){
       $(".navbar-scroll").css("animation-name", "iconscroll");
       $(".navbar-scroll").find("i").css("animation-name", "iconscrollimg")
@@ -35,8 +42,10 @@ var parallaxPos = (y / 5);
         $(".progress-bar").animate({ "width" : "show"});
       $("#progress-section").slideDown(800);
     }
-
 }
+
+
+
 
 $('#doneProject').click(function(){
   videoPlayer($('#doneVideo'))
@@ -55,7 +64,12 @@ function videoPlayer(video){
 
 $(window).on("scroll", function(){
   y = window.pageYOffset;
-  window.requestAnimationFrame(scrollHandler);
+  scrollHandler();
+  
+//  window.requestAnimationFrame(function(){
+//    console.log(y);
+//   scrollHandler();
+//  });
 });
 
 
