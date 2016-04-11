@@ -566,10 +566,15 @@ hr {
   font-size: 2.5em;
 }
 
+#menu1 .description-link a {
+  font-size: 1.5em;
+}
+
 .description-link {
   width: auto;
   height: auto;
 }
+
 
 .description small {
   font-size: 9px;
@@ -615,6 +620,9 @@ hr {
   }
   .head-icons i {
     font-size: 50px;
+  }
+  #menu1 .description-link a {
+  font-size: 1.3em;
   }
 }
 
@@ -667,6 +675,7 @@ hr {
   .head-icons i {
     font-size: 40px;
   }
+  
 }
 
 @media screen and (max-width: 480px) {
@@ -684,6 +693,9 @@ hr {
   }
   .description a {
     font-size: 1.5em;
+  }
+  #menu1 .description-link a {
+  font-size: 1.2em;
   }
   .data-transfer-lg {
     width: 20px;

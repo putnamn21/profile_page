@@ -18,6 +18,10 @@
 <body>
   <div class="home-parallax"></div>
     <div class="home-parallax-overlay">
+       <!--<div class="alien"> 
+        <span class="hello-message">Hi There!</span>
+         <img class="img img-responsive"  src="/image/Alien.svg" alt="alien space ship"> 
+       </div>-->
       <div class="home-filter">
 
           <!-- row 1 -->
@@ -109,12 +113,14 @@
                 <div class="projects-area">
                   <ul class="nav nav-pills nav-justified">
                     <li id="doneProject" class="active"><a data-toggle="tab" href="#home">Done</a></li>
-                    <li id="blurtProject"><a data-toggle="tab" href="#menu1">Blurt//</a></li>
-                    <li id="libraryProject"><a data-toggle="tab" href="#menu2">Library App</a></li>
+                    <li id="photoProject"><a data-toggle="tab" href="#menu1">Photo Gallery</a></li>
+                    <li id="blurtProject"><a data-toggle="tab" href="#menu2">Blurt//</a></li>
+                    <li id="libraryProject"><a data-toggle="tab" href="#menu3">Library App</a></li>
                   </ul>
 
                   <br/>
                   <div class="tab-content content-hr noLrPadding">
+                   
                     <div id="home" class="tab-pane fade in active">
                       <video width="100%" id="doneVideo">
                         <source src="video/doneVideo.mp4" type="video/mp4"> Your browser does not support HTML5 video.
@@ -160,8 +166,52 @@
 
                     </div>
 
-
                     <div id="menu1" class="tab-pane fade">
+                      <video width="100%" id="photoVideo">
+                        <source src="video/photoVideo.mp4" type="video/mp4"> Your browser does not support HTML5 video.
+                      </video>
+                      <div class="white-box black-border">
+                        <div class="description col-md-6 ">
+                          <div>
+                            <div class="btn btn-default description-link"><a href="https://putnamn21-photo-gallery.herokuapp.com/" target="_blank">go to my Photo Gallery</a></div>
+                              <small>*App is using free hosting causing inital load time to be long while the app initializes</small>
+                          </div>
+                          <h4 class="project-link">Summary: </h4>
+                          <hr>
+                          <p>This is a basic photo gallery application that allows you to upload photos and view the locations with google maps. I built it using Angular.JS with the angular-file-upload module extension.</p>
+                        </div>
+
+                        <div class="features col-md-6">
+                          <h4>Features: </h4>
+                          <hr>
+                          <ul>
+                            <li>Photo details are shown by hovering over the photo icon</li>
+
+                            <li>Photo locations can be viewed by clicking on the link within the photo details section</li>
+
+                            <li>JWT authentification for logged in users. API routes protected using Express 4.0 router middleware</li>
+
+                            <li>Photos are uploaded with Ajax using Angular.JS and file-upload extension</li>
+                          </ul>
+                          <div class="tech-stack">
+                            <h4>Tech Stack: </h4>
+                            <hr>
+                            <ul>
+                              <li>Bootstrap</li>
+                              <li>Stylus</li>
+                              <li>Angular.js</li>
+                              <li>Express</li>
+                              <li>Mongoose ODM</li>
+                              <li>MongoDB hosted on Mlab</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
+
+                    </div>
+
+                    <div id="menu2" class="tab-pane fade">
                       <video width="100%" id="blurtVideo">
                         <source src="video/blurt.mp4" type="video/mp4"> Your browser does not support HTML5 video.
                       </video>
@@ -209,9 +259,10 @@
                       </div>
 
                     </div>
+                    
 
 
-                    <div id="menu2" class="tab-pane fade white-box black-border">
+                    <div id="menu3" class="tab-pane fade white-box black-border">
                      <div class="description col-md-6 ">
                           <div>
                             <div class="btn btn-default description-link"><a href="https://putnamn21-codecraft-library.herokuapp.com/" target="_blank">go to the Library</a></div>
