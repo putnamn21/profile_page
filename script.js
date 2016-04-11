@@ -53,6 +53,9 @@ $('#doneProject').click(function(){
 $('#blurtProject').click(function(){
   videoPlayer($('#blurtVideo'))
 });
+$('#photoProject').click(function(){
+  videoPlayer($('#photoVideo'))
+});
 
 
 function videoPlayer(video){
