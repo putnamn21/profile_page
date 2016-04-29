@@ -1,83 +1,77 @@
-//OPENING DIV ANIMATIONS
 
-$(".progress-bar").hide();
-$("#progress-section").hide();
-$(".projects-area").hide();
+// initial page load variables
+  $(".progress-bar").hide();
+  $("#progress-section").hide();
+  $(".projects-area").hide();
 
-var y;
+  var y = 0;
+  var windowHeight = $(window).height();
 
-function scrollHandler (){
+  //keeps the blocks of code below from executing continually once the animation is triggered for the first time
+  var triggerOne = false;
+  var triggerTwo = false;
+
+//scroll events
+  $(window).on("scroll", function(){
+    y = window.pageYOffset;
+    scrollHandler();
+
+  });
+
+  function scrollHandler (){
   
-    var parallaxPos = -y/4;
-    //PARALLAX AREA
-  
-  
-     
+      var parallaxPos = -y/4;
+      var bottom_of_window = y + windowHeight;
       var coordinates = parallaxPos/4+'px, '+parallaxPos+"px";
+  
+    //PARALLAX AREA
       $(".home-parallax").css({
           "transform": "translate("+coordinates+")",
           "-ms-transform": "translate("+coordinates+")",
           "-webkit-transform": "translate("+coordinates+")"
       });
 
-  
-    
     //social icons animation
-    if(y > 5){
-      $(".navbar-scroll").css("animation-name", "iconscroll");
-      $(".navbar-scroll").find("i").css("animation-name", "iconscrollimg")
-    }
-  
+      if(y > 5){
+        $(".navbar-scroll").css("animation-name", "iconscroll");
+        $(".navbar-scroll").find("i").css("animation-name", "iconscrollimg")
+      }
+    
     //SECTION OPENING TRIGGERS
-    if( y > 500){
-      $(".projects-area").slideDown(800);
-      setTimeout(function(){
-          if ($(window).width()>480){
-          $("#doneVideo").get(0).play();
-        }
-      }, 900);
-      
-    }
-    if( y > 1300){
-        $(".progress-bar").animate({ "width" : "show"});
-      $("#progress-section").slideDown(800);
-    }
-}
+    if(!triggerOne){
+      if($(".projects-area").parents('.row').offset().top + 300 < bottom_of_window){
+        $(".projects-area").slideDown(800);
+        setTimeout(function(){
+            if ($(window).width()>480){
+            $("#doneVideo").get(0).play();
+          }
+        }, 900);
+        triggerOne = true;
+      }
+    };
+    if(!triggerTwo){
+      if($("#progress-section").parents('.row').offset().top + 300 < bottom_of_window){
+          $(".progress-bar").animate({ "width" : "show"});
+        $("#progress-section").slideDown(800);
+        triggerTwo = true;
+      }
+    };
+  };// end scroll handler
+
+// video player functions
+  $('#doneProject').click(function(){
+    videoPlayer($('#doneVideo'))
+  });
+  $('#blurtProject').click(function(){
+    videoPlayer($('#blurtVideo'))
+  });
+  $('#photoProject').click(function(){
+    videoPlayer($('#photoVideo'))
+  });
 
 
-
-
-$('#doneProject').click(function(){
-  videoPlayer($('#doneVideo'))
-});
-$('#blurtProject').click(function(){
-  videoPlayer($('#blurtVideo'))
-});
-$('#photoProject').click(function(){
-  videoPlayer($('#photoVideo'))
-});
-
-
-function videoPlayer(video){
-  $('video').get(0).pause();
-  video.get(0).currentTime = 0;
-  video.get(0).play();
-}
-
-
-$(window).on("scroll", function(){
-  y = window.pageYOffset;
-  scrollHandler();
-  
-//  window.requestAnimationFrame(function(){
-//    console.log(y);
-//   scrollHandler();
-//  });
-});
-
-
-
-function submitMsg(){
-    $("#submit-div").append('<span id="success-submit">Success!</span>');
-    setTimeout(function(){$('#success-submit').remove()}, 3000);
-};
+  function videoPlayer(video){
+    $('video').get(0).pause();
+    video.get(0).currentTime = 0;
+    video.get(0).play();
+  }
