@@ -566,8 +566,8 @@ hr {
   font-size: 2.5em;
 }
 
-#menu1 .description-link a {
-  font-size: 1.5em;
+.sm-description-link a{
+  font-size: 2em;
 }
 
 .description-link {
@@ -586,6 +586,29 @@ hr {
 .noLrPadding {
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.iphoneIframe {
+  display: inline-block;
+  width 220px;
+  height: 450px;
+  position: relative;
+  margin: 30px
+}
+
+.iphoneIframe img {
+  z-index: 10;
+}
+
+.iphoneIframe iframe {
+  position: absolute;
+  width: 320px;
+  height: 568px;
+  -webkit-transform: scale(0.595);
+  transform: scale(0.595);
+  top: -59px;
+  left: -50px;
+  z-index: 15;
 }
 
 
@@ -621,7 +644,7 @@ hr {
   .head-icons i {
     font-size: 50px;
   }
-  #menu1 .description-link a {
+  .sm-description-link a{
   font-size: 1.3em;
   }
 }
@@ -694,7 +717,7 @@ hr {
   .description a {
     font-size: 1.5em;
   }
-  #menu1 .description-link a {
+  .sm-description-link a {
   font-size: 1.2em;
   }
   .data-transfer-lg {

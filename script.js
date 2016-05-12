@@ -31,7 +31,7 @@
           "-webkit-transform": "translate("+coordinates+")"
       });
 
-    //social icons animation
+    //SOCIAL ICONS ANIMATION
       if(y > 5){
         $(".navbar-scroll").css("animation-name", "iconscroll");
         $(".navbar-scroll").find("i").css("animation-name", "iconscrollimg")
@@ -71,7 +71,20 @@
 
 
   function videoPlayer(video){
-    $('video').get(0).pause();
-    video.get(0).currentTime = 0;
-    video.get(0).play();
+    //pauses all videos
+      $('video').get(0).pause();
+    //restarts the video if passed into function
+      if(video){
+        video.get(0).currentTime = 0;
+        video.get(0).play();
+      }  
   }
+
+// iframe refresh for mailchimp page
+  $('#mailChimp').click(function(){
+    console.log("whatup homie");
+    videoPlayer();
+    $('.iphoneIframe iframe').attr('src', $('.iphoneIframe iframe').attr('src'));
+
+  });
+
